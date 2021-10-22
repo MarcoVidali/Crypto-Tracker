@@ -19,11 +19,26 @@ def main():   # Main function
         for crypto_name in cryptos_names:   # Looping each crypto name
             print(f"{blue(cryptos_names.index(crypto_name) + 1)}{blue(')')} {blue(crypto_name)}")   # Printing crypto name
 
-        # Getting crypto to track
-        crypto_to_track = ""
-        while not crypto_to_track.strip():
-            print(f"{white('Crypto to track: ')}", end = "")
-            crypto_to_track = input()
+        try:
+            # Getting crypto to track
+            crypto_to_track = ""
+            print(f"{white('Crypto to track: ')}", end = "")   # Printing input
+            crypto_to_track = input()   # Getting input
+       
+            if not crypto_to_track.strip():   # Crypto to track is empity
+                main()   # Going to main
+
+            try:
+                crypto_to_track = int(crypto_to_track)   # Crypto to track is an integer
+            except:
+                main()   # Going to main
+                
+            if crypto_to_track <= 0 or crypto_to_track > len(cryptos_names):   # Crypto to track is too low or too high
+                main()   # Going to main
+
+        except KeyboardInterrupt:
+            clearConsole()   # Clearing console
+            quit()   # Quitting
 
         # Showing crypto price
         clearConsole()   # Clearing console

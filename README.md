@@ -1,6 +1,6 @@
 # Crypto Tracker
 ## What is Crypto Tracker?
-Crypto Tracker is a program that allows you to track the price of cryptos in real time.
+Crypto Tracker is a program that allows you to do a lot of things of cryptos, such as tracking the price in real time or getting the price some time ago.
 ## How can I use it?
 Simply, run the "Crypto Tracker.py" file. If you want to close the program or go back, simply press "CTRL + C". Then, choose the section (with the number of the section).
 ### Current price tracker

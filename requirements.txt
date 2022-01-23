@@ -1,0 +1,6 @@
+os
+rich
+cryptocompare
+datetime
+matplotlib
+dateutil

@@ -24,8 +24,6 @@ def main():
             print(f"{blue(str(current_index) + ') ' + section)}")
             current_index += 1
 
-            # ciao
-
         try:
             # Getting section
             print(f"\n{white('Section: ')}", end="")
